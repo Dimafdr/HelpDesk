@@ -19,10 +19,6 @@ build_script:
 test_script:
   - npm run lint # скрипт тестирования
 
-environment:
-  my_variable:
-    secure: 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
-
 deploy_script:  # скрипт развёртывания
   - git config --global credential.helper store
   - git config --global user.name AppVeyor
